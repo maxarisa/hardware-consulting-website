@@ -111,7 +111,7 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay for better text readability */
+    background: linear-gradient(to right, rgba(0, 50, 100, 0.6), rgba(50, 100, 150, 0.6)); /* Subtle blue gradient overlay */
 }
 
 .hero-content {
@@ -134,7 +134,7 @@ header nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    background: #007bff;
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient button for more appeal */
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
