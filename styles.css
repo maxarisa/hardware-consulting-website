@@ -208,7 +208,7 @@ main section {
 }
 
 #case-studies .case-study-card h4 {
-    text-align: left; /* Left align headings within the card */
+    text-align: center; /* Center align headings within the card */
 }
 
 .case-studies-container {
