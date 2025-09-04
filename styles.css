@@ -55,44 +55,44 @@ header {
     border-bottom: #e0e0e0 1px solid;
 }
 
-header nav {
+.main-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 10px;
+    justify-content: space-between; /* Pushes logo to left, links to right */
+    align-items: center; /* Vertically centers items */
+    padding: 10px 20px; /* Add some padding */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
-header nav .logo {
+.main-nav .logo {
     font-size: 1.8em;
     font-weight: bold;
     color: #0056b3;
 }
 
-header nav ul {
-    padding: 0;
-    margin: 0;
+.main-nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Arrange list items horizontally */
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li {
-    margin-left: 20px;
+.main-nav ul li {
+    margin-left: 20px; /* Space between navigation links */
 }
 
-header nav ul li a {
+.main-nav ul li a {
     color: #333;
     font-weight: bold;
-    text-decoration: none;
     font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+.main-nav ul li a:hover {
     color: #007bff;
 }
 
-/* Hero Section */
+/* Hero Section - Adjustments for fixed nav */
 .hero {
     min-height: 600px;
     background: url('hero-background.jpg') no-repeat center center/cover; /* Placeholder for background image */
@@ -102,6 +102,7 @@ header nav ul li a:hover {
     text-align: center;
     color: #fff;
     position: relative;
+    padding-top: 60px; /* Add padding to prevent hero content from being hidden by the header */
 }
 
 .hero::before {
@@ -177,12 +178,15 @@ main section {
 }
 
 .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #f9f9f9;
     padding: 30px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     flex: 1 1 300px; /* Flex grow, shrink, basis */
-    text-align: left;
+    text-align: center;
 }
 
 .service-card h3 {
@@ -193,6 +197,18 @@ main section {
 /* Case Studies Section */
 #case-studies {
     background: #f4f4f4;
+}
+
+#case-studies h3 {
+    text-align: center;
+    font-size: 1.5em; /* Make it more prominent */
+    margin-top: 20px; /* Add some space above the heading */
+    margin-bottom: 10px; /* Adjust bottom margin */
+    color: #0056b3; /* Use the same prominent blue as h2 */
+}
+
+#case-studies .case-study-card h4 {
+    text-align: left; /* Left align headings within the card */
 }
 
 .case-studies-container {
@@ -297,6 +313,28 @@ main section {
 .visual-journey-map p {
     margin-bottom: 10px;
     font-size: 0.95em;
+}
+
+/* Timeline Wrapper Styles */
+.timeline-wrapper {
+    width: 100%; /* Default to full width */
+    height: 400px; /* Increased height for better visibility */
+    border: 1px solid #ccc; /* Added a subtle border */
+    border-radius: 8px;
+    margin-top: 20px; /* Added some space above the timeline */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added a subtle shadow */
+    background-color: #ffffff; /* White background for the wrapper */
+}
+
+/* Mindmap Wrapper Styles */
+.mindmap-wrapper {
+    width: 100%; /* Default to full width */
+    height: 500px; /* Increased height for better visibility */
+    border: 1px solid #ccc; /* Added a subtle border */
+    border-radius: 8px;
+    margin-top: 20px; /* Added some space above the mindmap */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added a subtle shadow */
+    background-color: #ffffff; /* White background for the wrapper */
 }
 
 /* About Section */
